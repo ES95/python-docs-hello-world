@@ -1,6 +1,7 @@
 from flask import Flask
 from flask import request
-# import requests,json
+import requests,json
+
 app = Flask(__name__)
 
 app.config["DEBUG"] = True
