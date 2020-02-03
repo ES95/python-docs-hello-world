@@ -1,11 +1,9 @@
 from flask import Flask
 app = Flask(__name__)
-
+app.debug = True
 @app.route("/")
 def hello():
-    a=1
-    b=2
-    return (a+b)
+   retutn "Hello"
 @app.route("/z")
 def hello():
     return "zzzz"
