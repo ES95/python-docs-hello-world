@@ -10,4 +10,4 @@ def hello():
     url=main_url+text
     response = requests.request('GET',url)
     u=json.loads(response.text)
-    return u
+    return "ss"
