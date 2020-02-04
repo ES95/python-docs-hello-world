@@ -1,7 +1,9 @@
 from flask import Flask
 from flask import request
+from flask import jsonify
 app = Flask(__name__)
 
+app.config['JSON_SORT_KEYS'] = False
 app.config["DEBUG"] = True
 
 @app.route("/")
@@ -184,7 +186,7 @@ def hello():
                 resp["top_intent"]='marks_check'
                 resp['Entities'].remove(i)
                 break
-    return(str(resp))
+    return(jsonify(resp))
 
 @app.route("/Hello")
 def hell():
