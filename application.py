@@ -184,7 +184,7 @@ def hello():
                 break
             if i['entity']=='meta_marks':
                 resp["top_intent"]='marks_check'
-                resp['Entities'].remove(i)
+#                 resp['Entities'].remove(i)
                 break
     return(jsonify(resp))
 
